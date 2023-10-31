@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"  # Your build command
+  publish = "build/"       # Your publish directory
+
+[context.production]
+  environment = { CI = "false" }
+[context.deploy-preview]
+  environment = { CI = "false" }
+[context.branch-deploy]
+  environment = { CI = "false" }
